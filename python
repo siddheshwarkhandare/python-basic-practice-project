@@ -1,0 +1,17 @@
+def binry(array,target):
+    index=0
+    size=len(array)-1
+    array.sort()
+    while index<=size:
+        mid=size//2
+        if array[mid]==target:
+            return mid
+        elif array[mid]<target:
+            index=mid+1
+        else:
+            size=mid-1
+    return-1
+
+array=[46,615,16,54,1654,1]
+    
+binry(array,1654)  
